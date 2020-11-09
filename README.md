@@ -10,5 +10,5 @@
 </hr>
 <h2> Screenshots of Project </h2>
 
-<img src="/screenshots/Clone" alt="Clone">
-<img src="/screenshots/Google" alt="Google>
+<img src="/screenshots/Clone.png" alt="Clone">
+<img src="/screenshots/Google.png" alt="Google>
