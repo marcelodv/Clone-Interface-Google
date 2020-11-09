@@ -3,6 +3,8 @@
   <a href="www.google.com">Google</a> 
  </h1>
  
+ <p><i>For study purposes.</i></p>
+ 
 </hr>
 
 <h3> How to open project </h3>
