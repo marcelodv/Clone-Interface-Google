@@ -3,8 +3,12 @@
   <a href="www.google.com">Google</a> 
  </h1>
  
- <h3><strong>For study purposes.</strong></h3>
- 
  ## Resources
  HTML - CSS
  SVG Images
+
+</hr>
+<h2> Screenshots of Project </h2>
+
+<img src="./screenshots/Clone" alt="Clone">
+<img src="./screenshots/Google" alt="Google>
