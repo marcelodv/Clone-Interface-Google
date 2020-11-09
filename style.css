@@ -63,6 +63,10 @@ body {
     margin-right: 4px;
 }
 
+.menu__section.right a {
+    display: none;
+}
+
 .menu__section.right .menu__icon {
     padding: 12px;
 }
@@ -100,7 +104,7 @@ body {
     height: 52px;
 }
 
-.content__search {
+.content__input {
     margin-top: 18px;
     width: 100%;
     max-width: 736px;
@@ -108,9 +112,18 @@ body {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.87);
     background-color: transparent;
-    border-radius: 25px;
+    border-radius: 24px;
     border: 1px solid #dadec0;
     outline: 0;
+}
+
+.input__left,
+.input__right {
+    display: none;
+}
+
+.content__buttons {
+    display: none;
 }
 
 .content__offer {
@@ -133,25 +146,171 @@ body {
     background-color: #f2f2f2;
 }
 
-.footer__section:not(:first-child) {
-    border: 1px solid #e4e4e4;
+.footer__section {
+    border-top: 1px solid #e4e4e4;
 }
 
 .footer__location {
-    font-size: 16px;
+    font-size: 15.5px;
     color: rgba(0, 0, 0, 0.54);
-    padding: 10px 12px;
+    padding: 10px 27px;
 }
 
 .footer__links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 13px;
+    flex-direction: row;
+    font-size: 15px;
     color: rgba(0, 0, 0, 0.54);
-    padding: 10px;
+    padding: 12px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.footer__links .links__left{
+    display: none;
+}
+
+.footer__links a {
+    color: #5f5368;
+    text-decoration: none;
 }
 
 .footer__links a:not(:first-child) {
     margin-left: 27px;
+}
+
+/* Media Query */
+
+@media(min-width: 763px) {
+
+    /* Header */
+
+    .menu {
+        padding-right: 27px;
+        padding-top: 13px;
+    }
+
+    .menu__section.left {
+        visibility: hidden;
+    }
+
+    .menu__section.right {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+
+    .menu__section.right a {
+        display: block;
+        margin-left: 15px;
+        color: rgba(0,0,0,0.87);
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    .menu__section.right a:not(:first-child) {
+        margin-right: 10px;
+    }
+
+    .menu__avatar--frame {
+        visibility: hidden;
+    }
+
+    /* Main */
+
+    .content {
+        padding-top: 120px;
+    }
+
+    .content__logo {
+        height: 102px;
+        width: 282px;
+    }
+
+    .content__input {
+        height: 1px;
+        width: 582px;
+        display: inline;
+        visibility: hidden;
+    }
+
+    .input__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 44px;
+    }
+
+    .input__left,
+    .input__right {
+        display: inline;
+        position: relative;
+    }
+
+    .input__left img,
+    .input__right img {
+        width: 16px;
+        color: grey;
+        filter: contrast(2%);
+    }
+
+    .input__left img {
+        margin-left: 17px;
+        transform: scaleX(-1);
+    }
+
+    .input__right img {
+        margin-right: 17px;
+        transform: scaleX(-1);
+        width: 20px;
+    }
+
+    .input__search {
+        margin-top: 18px;
+        max-width: 736px;
+        padding: 7px 10px 6px 55px;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.87);
+        background-color: transparent;
+        border-radius: 24px;
+        border: 1px solid #dadec0;
+        outline: 0;
+        position: absolute;
+        height: 44px;
+        width: 582px;
+        margin-bottom: 26px;
+    }
+
+
+    .content__buttons {
+        display: block;
+        margin-top: 22px;
+    }
+
+    .content__buttons button {
+        background-color: #f2f2f2;
+        color: #5f6368;
+        height: 36px;
+        width: 140.64px;
+        padding: 0px 16px;
+        margin: 11px 4px;
+        border: 0px;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .content__offer {
+        margin-top: 16px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+
+    .footer__links .links__left{
+        display: block;
+    }
 }
